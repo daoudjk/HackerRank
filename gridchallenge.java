@@ -21,7 +21,6 @@ class Result {
 
     public static String gridChallenge(List<String> grid) {
         int len = grid.size(), strLen = grid.get(0).length();
-        System.out.println(len);
         String retVal = "YES";
         for(int i = 0; i < len; i++)
         {
@@ -34,8 +33,7 @@ class Result {
             int j = 0;
             while(j + 1 < len)
             {
-                System.out.println(j);
-                if (grid.get(j).charAt(i) < grid.get(j+1).charAt(i))
+                if (grid.get(j).charAt(i) <= grid.get(j+1).charAt(i))
                 {
                     j++;
                 }
